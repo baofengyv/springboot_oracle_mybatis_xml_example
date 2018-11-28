@@ -1,5 +1,5 @@
-# springboot_mysql_mybatis_xml_example
-spring boot mysql mybatis xml example
+# springboot_oracle_mybatis_xml_example
+spring boot oracle mybatis xml example
 
 极简化的 
 
@@ -7,6 +7,21 @@ spring boot mysql mybatis xml example
     mybatis(使用XML mapper) +
     oracle + 
     maven mybatis generator plugin
+
+
+> 安装使用说明
+   
+    由于Oracle的驱动无法从mvn上下载，需要手动下载驱动JAR包。
+    本demo使用Oracle 11g 所以下载的ojdbc6。
+
+> 下载Oracle驱动
+
+> 下载 mvn 然后执行命令，将驱动包，安装到本地仓库中：
+```bash
+./mvn install:install-file -Dfile=ojdbc6.jar  -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.4 -Dpackaging=jar
+```
+
+> 本项目即可以正常执行
 
 > 打war包部署到Tomcat说明
     
