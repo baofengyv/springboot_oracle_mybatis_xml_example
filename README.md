@@ -5,7 +5,7 @@ spring boot mysql mybatis xml example
 
     spring boot + 
     mybatis(使用XML mapper) +
-    mysql + 
+    oracle + 
     maven mybatis generator plugin
 
 > 打war包部署到Tomcat说明
